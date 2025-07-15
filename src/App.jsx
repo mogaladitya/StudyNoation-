@@ -8,6 +8,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import UpdatePassword from "./pages/UpdatePassword";
 import VerifyEmail from "./pages/VerifyEmail";
 import About from "./pages/About";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
                   <VerifyEmail />
               }
              />  
+
+            <Route path="/contact"  element={<ContactPage/>} />   
 
           </Routes>
 
