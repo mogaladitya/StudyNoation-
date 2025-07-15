@@ -1,0 +1,25 @@
+# Node dependencies
+node_modules/
+server/node_modules/
+
+# Environment files
+.env
+server/.env
+
+# Log files
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# Editor/IDE configs
+.vscode/
+.idea/
+
+# Tailwind cache
+.tailwind
