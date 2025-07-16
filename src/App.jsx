@@ -9,6 +9,8 @@ import UpdatePassword from "./pages/UpdatePassword";
 import VerifyEmail from "./pages/VerifyEmail";
 import About from "./pages/About";
 import ContactPage from "./pages/ContactPage";
+import Dashboard from "./pages/Dashboard";
+import MyProfile from "./components/core/Dashboard/MyProfile";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
               <Route path="/forgot-password" element={<ForgotPassword/>}/>
               <Route path="/update-password/:id" element={<UpdatePassword/>}/>
               <Route path="/about" element={<About />}/>
+
               <Route
               path="/verify-email"
               element={
@@ -29,6 +32,15 @@ function App() {
              />  
 
             <Route path="/contact"  element={<ContactPage/>} />   
+            
+            <Route  element={<Dashboard />}>
+
+                <Route path="/dashboard/my-profile" element={<MyProfile />} />
+    
+
+            </Route>
+            
+ 
 
           </Routes>
 
